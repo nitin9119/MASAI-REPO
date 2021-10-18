@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <title>news-app</title>
+    <style>
+        *{
+            font-family: 'Roboto', sans-serif;
+        }
+        #newscont{
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: 400px 400px 400px;
+            grid-gap: 5px;
+        }
+        .topstory{
+            width:400px;
+            height:180px;
+            border: 1px solid black;
+            margin:4px 4px 4px 10px;
+            
+            background-color: whitesmoke;
+        }
+        .topstory:hover{
+            cursor: pointer;
+        }
+        .image{
+            width:200px;
+            height: 100px;
+            background-size: contain;
+        }
+        .searchres{
+            width:400px;
+            height:180px;
+            border: 1px solid red;
+            margin:4px 4px 4px 10px;
+            padding: 4px;
+        }
+        .resimage{
+            width:200px;
+            height: 100px;
+            background-size: contain;
+        }
+        .nwsd{
+            width:1100px;
+            margin:auto;
+            height: 700px;
+            border:1px solid black;
+            padding: 20px;
+        }
+        .newsimg{
+            width:450px;
+            height: 300px;
+            background-size: contain;
+        }
+        #search{
+            margin-left: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <h1 onclick="homePg()" style="color:#004D40">Homepage</h1>
+    <input id="search" type="text" placeholder="enter news you want to search..">
+    <button onclick="searchNews()">Search</button>
+    <div id="search">
+
+    </div>
+    <div id="newscont">
+
+    </div>
+</body>
+</html>
+<script src="search.js">
+    
+</script>
